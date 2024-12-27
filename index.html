@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet"> <!-- Nosifer font -->
+</head>
+<body>
+    <div class="container">
+        <div class="warning-text">Join OUR Channel ⚠️</div>
+        <h1>Md HR`s I.G.</h1>
+        <form id="imageForm">
+            <input type="text" id="imageText" name="imageText" placeholder="Enter a description" required>
+            <button type="submit">Generate Images</button>
+        </form>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay">
+        <div class="progress-circle" id="progressCircle">
+            <span id="progressText">0%</span>
+        </div>
+        <p>Generating images... please wait.</p>
+    </div>
+
+    <!-- Container for the generated images -->
+    <div id="imageContainer" style="display: flex; flex-wrap: wrap; justify-content: center; padding-top: 20px;">
+        <!-- Images will be displayed here -->
+    </div>
+
+    <!-- Telegram FAB icon -->
+    <a href="https://t.me/universe_teach" class="fab" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style="width: 30px; height: 30px;">
+    </a>
+
+    <script src="app.js"></script>
+</body>
+</html>
